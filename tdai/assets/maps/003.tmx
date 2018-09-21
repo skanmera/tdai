@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" tiledversion="1.1.5" orientation="orthogonal" renderorder="right-down" width="10" height="12" tilewidth="64" tileheight="64" infinite="0" nextobjectid="157">
+ <tileset firstgid="1" source="units.tsx"/>
+ <tileset firstgid="61" source="enemies.tsx"/>
+ <tileset firstgid="66" source="locations.tsx"/>
+ <tileset firstgid="68" source="tiles.tsx"/>
+ <layer name="terrain" width="10" height="12">
+  <data encoding="csv">
+88,89,88,88,88,88,88,88,88,88,
+88,89,88,88,101,90,90,90,90,90,
+88,89,88,88,89,88,88,88,88,88,
+88,103,90,94,93,90,102,88,88,88,
+88,88,88,89,88,88,89,88,88,88,
+88,88,88,89,88,88,89,88,88,88,
+98,101,90,104,88,88,89,88,88,88,
+88,89,88,88,88,88,89,88,88,88,
+88,89,88,88,88,88,103,90,90,90,
+90,104,88,88,88,88,88,88,88,88,
+85,85,85,85,85,85,85,85,85,85,
+78,78,78,78,78,78,78,78,78,78
+</data>
+ </layer>
+ <objectgroup name="enemies1">
+  <properties>
+   <property name="route" type="int" value="1"/>
+  </properties>
+  <object id="82" gid="61" x="124" y="-77" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="0"/>
+    <property name="wait" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="83" gid="61" x="164" y="-76" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="1"/>
+    <property name="wait" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="84" gid="61" x="203" y="-77" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="2"/>
+    <property name="wait" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="85" gid="61" x="244" y="-76" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="3"/>
+    <property name="wait" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="86" gid="61" x="287" y="-76" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="4"/>
+    <property name="wait" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="87" gid="61" x="331" y="-76" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="5"/>
+    <property name="wait" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="151" gid="61" x="373.5" y="-75" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="6"/>
+    <property name="wait" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="152" gid="61" x="416.5" y="-75" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="7"/>
+    <property name="wait" type="float" value="0.5"/>
+   </properties>
+  </object>
+  <object id="153" gid="61" x="460.5" y="-75" width="32" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="8"/>
+    <property name="wait" type="float" value="0.5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="enemies2">
+  <properties>
+   <property name="route" type="int" value="2"/>
+  </properties>
+  <object id="114" gid="63" x="122" y="-36" width="27" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="0"/>
+    <property name="trigger_enemy_id" type="int" value="85"/>
+    <property name="trigger_type" value="terminated"/>
+    <property name="wait" type="float" value="0"/>
+   </properties>
+  </object>
+  <object id="115" gid="63" x="165" y="-38" width="27" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="1"/>
+    <property name="wait" type="float" value="1"/>
+   </properties>
+  </object>
+  <object id="116" gid="63" x="204" y="-38" width="27" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="2"/>
+    <property name="wait" type="float" value="1"/>
+   </properties>
+  </object>
+  <object id="117" gid="63" x="247" y="-39" width="27" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="3"/>
+    <property name="wait" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="118" gid="63" x="287" y="-36" width="27" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="4"/>
+    <property name="wait" type="float" value="1"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="enemies3">
+  <properties>
+   <property name="route" type="int" value="3"/>
+  </properties>
+  <object id="146" gid="65" x="700" y="126" width="31" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="0"/>
+    <property name="wait" type="float" value="10"/>
+   </properties>
+  </object>
+  <object id="147" gid="65" x="738" y="126" width="31" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="1"/>
+    <property name="wait" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="148" gid="65" x="776" y="125" width="31" height="32">
+   <properties>
+    <property name="entry_index" type="int" value="2"/>
+    <property name="wait" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="149" gid="62" x="816" y="125" width="32" height="31">
+   <properties>
+    <property name="entry_index" type="int" value="3"/>
+    <property name="wait" type="float" value="5"/>
+   </properties>
+  </object>
+  <object id="150" gid="62" x="858" y="124" width="32" height="31">
+   <properties>
+    <property name="entry_index" type="int" value="4"/>
+    <property name="wait" type="float" value="5"/>
+   </properties>
+  </object>
+ </objectgroup>
+ <objectgroup name="route1">
+  <properties>
+   <property name="id" type="int" value="1"/>
+  </properties>
+  <object id="8" name="0" type="waypoint" x="96" y="-46">
+   <properties>
+    <property name="index" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="10" name="2" type="waypoint" x="414" y="230">
+   <properties>
+    <property name="index" value="2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="13" name="4" type="waypoint" x="695" y="549">
+   <properties>
+    <property name="index" value="4"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="14" name="1" type="waypoint" x="102" y="225">
+   <properties>
+    <property name="index" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="15" name="3" type="waypoint" x="421" y="539">
+   <properties>
+    <property name="index" value="3"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup name="route2">
+  <properties>
+   <property name="id" type="int" value="2"/>
+  </properties>
+  <object id="91" name="0" type="waypoint" x="96" y="-46">
+   <properties>
+    <property name="index" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="92" name="2" type="waypoint" x="226" y="231">
+   <properties>
+    <property name="index" value="2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="93" name="4" type="waypoint" x="103" y="425">
+   <properties>
+    <property name="index" value="4"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="94" name="1" type="waypoint" x="102" y="225">
+   <properties>
+    <property name="index" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="95" name="3" type="waypoint" x="219" y="411">
+   <properties>
+    <property name="index" value="3"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="96" name="5" type="waypoint" x="90.3333" y="603.333">
+   <properties>
+    <property name="index" value="5"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="119" name="6" type="waypoint" x="-54.6667" y="610.667">
+   <properties>
+    <property name="index" value="6"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup name="route3">
+  <properties>
+   <property name="id" type="int" value="3"/>
+  </properties>
+  <object id="134" name="0" type="waypoint" x="664" y="102">
+   <properties>
+    <property name="index" value="0"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="135" name="2" type="waypoint" x="292" y="226">
+   <properties>
+    <property name="index" value="2"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="136" name="4" type="waypoint" x="425" y="539">
+   <properties>
+    <property name="index" value="4"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="137" name="1" type="waypoint" x="293" y="105">
+   <properties>
+    <property name="index" value="1"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="138" name="3" type="waypoint" x="415" y="235">
+   <properties>
+    <property name="index" value="3"/>
+   </properties>
+   <point/>
+  </object>
+  <object id="139" name="5" type="waypoint" x="677.333" y="547.333">
+   <properties>
+    <property name="index" value="5"/>
+   </properties>
+   <point/>
+  </object>
+ </objectgroup>
+ <objectgroup name="locations">
+  <object id="76" type="melee" gid="67" x="81.6667" y="501" width="32" height="32"/>
+  <object id="89" type="ranged" gid="66" x="178.667" y="114.333" width="32" height="32"/>
+  <object id="124" type="melee" gid="67" x="144" y="240" width="32" height="32"/>
+  <object id="125" type="melee" gid="67" x="398.667" y="350.667" width="32" height="32"/>
+  <object id="126" type="melee" gid="67" x="469.333" y="109.333" width="32" height="32"/>
+  <object id="127" type="ranged" gid="66" x="276" y="560" width="32" height="32"/>
+  <object id="128" type="ranged" gid="66" x="312" y="318.667" width="32" height="32"/>
+  <object id="129" type="ranged" gid="66" x="49.3333" y="340" width="32" height="32"/>
+  <object id="130" type="ranged" gid="66" x="497.333" y="209.333" width="32" height="32"/>
+  <object id="131" type="ranged" gid="66" x="150.667" y="505.333" width="32" height="32"/>
+  <object id="133" type="melee" gid="67" x="529.333" y="558.667" width="32" height="32"/>
+ </objectgroup>
+ <objectgroup name="units">
+  <object id="66" type="cow" gid="50" x="512" y="768" width="32" height="32"/>
+  <object id="90" gid="48" x="64" y="768" width="32" height="32">
+   <properties>
+    <property name="bullet" value="green"/>
+   </properties>
+  </object>
+  <object id="120" gid="48" x="134.667" y="766.667" width="32" height="32">
+   <properties>
+    <property name="bullet" value="green"/>
+   </properties>
+  </object>
+  <object id="121" gid="45" x="384" y="768" width="32" height="32"/>
+  <object id="122" gid="34" x="192" y="768" width="32" height="32"/>
+  <object id="123" gid="31" x="320" y="768" width="32" height="32"/>
+  <object id="154" gid="58" x="576" y="768" width="32" height="32"/>
+  <object id="155" gid="45" x="448" y="768" width="32" height="32"/>
+  <object id="156" gid="34" x="256" y="768" width="32" height="32"/>
+ </objectgroup>
+</map>

@@ -1,0 +1,19 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+pytmx = "==3.21.5"
+pygame = "==1.9.4"
+lxml = "==4.0.0"
+pypaths = "==0.1.2"
+matplotlib = "==2.2.3"
+tqdm = "==4.26.0"
+keras = "===2.2.2"
+tensorflow = "==1.10"
+
+[dev-packages]
+
+[requires]
+python_version = "3.5"
